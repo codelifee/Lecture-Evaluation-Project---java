@@ -1,0 +1,15 @@
+127.0.0.1 - - [24/Aug/2020:20:47:20 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:20:47:22 +0900] "GET /Lecture_Evaluation/index.jsp HTTP/1.1" 200 9952
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:20:47:22 +0900] "GET /Lecture_Evaluation/css/bootstrap.min.css HTTP/1.1" 200 155758
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:20:47:22 +0900] "GET /Lecture_Evaluation/css/custom.css HTTP/1.1" 200 321
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:20:47:22 +0900] "GET /Lecture_Evaluation/js/jquery.min.js HTTP/1.1" 200 89476
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:20:47:22 +0900] "GET /Lecture_Evaluation/js/bootstrap.min.js HTTP/1.1" 200 58072
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:20:47:22 +0900] "GET /Lecture_Evaluation/js/popper.js HTTP/1.1" 200 19191
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:20:48:05 +0900] "GET /Lecture_Evaluation/index.jsp HTTP/1.1" 200 9952
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:20:48:06 +0900] "GET /Lecture_Evaluation/index.jsp HTTP/1.1" 200 9952
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:20:48:07 +0900] "GET /Lecture_Evaluation/index.jsp HTTP/1.1" 200 9952
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:20:48:15 +0900] "GET /Lecture_Evaluation/index.jsp?lectureDivide=%EC%A0%84%EC%B2%B4&search= HTTP/1.1" 200 9952
+127.0.0.1 - - [24/Aug/2020:20:58:26 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:20:58:27 +0900] "GET /Lecture_Evaluation/index.jsp HTTP/1.1" 200 9952
+127.0.0.1 - - [24/Aug/2020:21:19:28 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:21:19:28 +0900] "GET /Lecture_Evaluation/index.jsp HTTP/1.1" 200 9952
