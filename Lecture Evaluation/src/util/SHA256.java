@@ -8,6 +8,7 @@ public class SHA256 {
 		StringBuffer result = new StringBuffer();
 		try {
 			MessageDigest digest = MessageDigest.getInstance("SHA-256");
+			//sha값에서 salt는 외부의 공격으로부터 안전하게 만들어주는 것
 			byte[] salt = "Hello! This is Salt.".getBytes();
 			digest.reset();
 			digest.update(salt);

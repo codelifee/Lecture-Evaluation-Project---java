@@ -23,9 +23,10 @@
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
 		script.println("alert('로그인을 해주세요.');");
-		script.println("history.back();");
+		script.println("location.href = 'userLogin.jsp';");
 		script.println("</script>");
 		script.close();
+		return;
 	}
 	boolean emailChecked = userDAO.getUserEmailChecked(userID);
 	if(emailChecked == true) {
@@ -35,12 +36,13 @@
 		script.println("location.href = 'index.jsp'");
 		script.println("</script>");
 		script.close();
+		return;
 	}
 	
 	
 	//Should check this line later
 	String host = "http://localhost:8080/Lecture_Evaluation/";
-	String from = "therapu22@gamil.com";
+	String from = "suminjung09@gmail.com";
 	String to = userDAO.getUserEmail(userID);
 	String subject = "강의 평가를 위한 이메일 인증 메일입니다.";
 	String content = "다음 링크에 접속하여 이메일 인증을 진행하세요." +
@@ -105,9 +107,20 @@
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" id="dropdown" data-toggle="dropdown">회원 관리</a>
 					<div class="dropdown-menu" aria-labelledby="dropdown">
+<%
+	if(userID == null) {	
+%>										
 						<a class="dropdown-item" href="userLogin.jsp">로그인</a>
 						<a class="dropdown-item" href="userJoin.jsp">회원가입</a>
+<%
+	} else {
+%>				
+						
 						<a class="dropdown-item" href="userLogout.jsp">로그아웃</a>
+						
+<%
+	}
+%>
 					</div> 
 				</li>	
 			</ul>
