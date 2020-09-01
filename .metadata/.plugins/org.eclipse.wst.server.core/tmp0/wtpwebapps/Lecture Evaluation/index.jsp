@@ -68,8 +68,8 @@
 				</li>	
 			</ul>
 		</div>
-		<form class="form-inline my-2 my-lg-0">
-			<input class="form-control mr-sm-2" type="search" placeholder="내용을 입력하세요." aria-label="search">
+		<form action="./index.jsp" method="get" class="form-inline my-2 my-lg-0">
+			<input type="text" name="search" class="form-control mr-sm-2" type="search" placeholder="내용을 입력하세요." aria-label="search">
 			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">검색</button>				
 		</form>
 	</nav>
@@ -127,7 +127,7 @@
 	 				</button>	 		
 	 			</div>
 	 			<div class="modal-body">
-	 				<form action="./evaluationRegisterAction.jsp method="post">
+	 				<form action="./evaluationRegisterAction.jsp" method="post">
 	 					<div class="form-row">
 	 						<div class="form-group col-sm-6">
 	 							<label>강의명</label>
@@ -167,8 +167,8 @@
  								</select>	 			
  							</div>
  							<div class="form-group col-sm-4">
- 								<label>강의 구분</label>
- 								<select name="lectureDivde" class="form-control">
+ 								<label>강의 구분</label> 
+ 								<select name="lectureDivide" class="form-control">
  									<option value="전공" selected>전공</option>
  									<option value="교양">교양</option>
  									<option value="기타">기타</option>
@@ -178,7 +178,7 @@
  						</div>	
 	 						<div class="form-group">
 	 							<label>제목</label>
-	 							<input type="text" name="evaluationTime" class="form-control" maxlength="30">
+	 							<input type="text" name="evaluationTitle" class="form-control" maxlength="30">
 	 							<label>내용</label>
 	 							<textarea name="evaluationContent" class="form-control" maxlength="2048" style="height: 180px;"></textarea>		
 	 						</div>		 		 					
@@ -195,7 +195,7 @@
 	 						</div>
 	 						<div class="form-group col-sm-3">
 	 							<label>성적</label>
-	 							<select name="totalScore" class="form-control">
+	 							<select name="creditScore" class="form-control">
 	 								<option value="A" selected>A</option>
 	 								<option value="B">B</option>
 	 								<option value="C">C</option>
@@ -215,7 +215,7 @@
 	 						</div>
 	 						<div class="form-group col-sm-3">
 	 							<label>강의</label>
-	 							<select name="comfortableScore" class="form-control">
+	 							<select name="lectureScore" class="form-control">
 	 								<option value="A" selected>A</option>
 	 								<option value="B">B</option>
 	 								<option value="C">C</option>
