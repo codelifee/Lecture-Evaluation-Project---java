@@ -20,13 +20,13 @@ public class EvaluationDTO {
 	public EvaluationDTO() {
 	}
 	
-	public EvaluationDTO(int evaluationID, String userID, String lectureName, String projessorName, int lectureYear,
+	public EvaluationDTO(int evaluationID, String userID, String lectureName, String professorName, int lectureYear,
 			String semesterDivide, String lectureDivide, String evaluationTitle, String evaluationContent,
 			String totalScore, String creidtScore, String comfortableScore, String lectureScore, int likeCount) {
 		this.evaluationID = evaluationID;
 		this.userID = userID;
 		this.lectureName = lectureName;
-		this.professorName = projessorName;
+		this.professorName = professorName;
 		this.lectureYear = lectureYear;
 		this.semesterDivide = semesterDivide;
 		this.lectureDivide = lectureDivide;
@@ -57,11 +57,11 @@ public class EvaluationDTO {
 	public void setLectureName(String lectureName) {
 		this.lectureName = lectureName;
 	}
-	public String getProjessorName() {
+	public String getProfessorName() {
 		return professorName;
 	}
-	public void setProjessorName(String projessorName) {
-		this.professorName = projessorName;
+	public void setProfessorName(String professorName) {
+		this.professorName = professorName;
 	}
 	public int getLectureYear() {
 		return lectureYear;
@@ -99,7 +99,7 @@ public class EvaluationDTO {
 	public void setTotalScore(String totalScore) {
 		this.totalScore = totalScore;
 	}
-	public String getCreidtScore() {
+	public String getCreditScore() {
 		return creditScore;
 	}
 	public void setCreidtScore(String creidtScore) {
